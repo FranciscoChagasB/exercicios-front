@@ -1,0 +1,106 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #f13939, #fc8b21);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Formulário */
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #45a049;
+    outline: none;
+}
+
+/* Botões */
+button {
+    background-color: #45a049;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #33a02c;
+    transform: scale(1.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista de contatos */
+.lista-contatos {
+    margin-top: 30px;
+}
+
+.lista-contatos h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.lista-contatos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-contatos li {
+    font-size: 18px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}

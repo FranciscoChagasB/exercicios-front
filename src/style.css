@@ -1,0 +1,115 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container central */
+.container {
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Logo e título no topo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px;
+    margin-right: 10px;
+    animation: logo-pulse 1.5s infinite; /* Animação de pulsar */
+}
+
+/* Animação do ícone */
+@keyframes logo-pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #f13939, #fc8b21);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Contêiner para o quadro e setas */
+.exercicio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+/* Botões de navegação (setas) */
+.nav-btn {
+    background-color: #45a049;
+    color: white;
+    font-size: 24px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #33a02c;
+    transform: scale(1.1);
+}
+
+/* Quadro onde o exercício é exibido */
+.exercicio-quadro {
+    width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #33a02c;
+    transform: scale(1.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}

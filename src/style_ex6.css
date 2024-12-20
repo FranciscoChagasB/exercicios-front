@@ -1,0 +1,125 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container central */
+.container {
+    text-align: center;
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Logo e título no topo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    /* Tamanho do ícone */
+    height: 50px;
+    margin-right: 10px;
+    animation: logo-pulse 1.5s infinite;
+    /* Animação de pulsar */
+}
+
+@keyframes logo-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #f13939, #fc8b21);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Formulário de Cadastro */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Botões no formulário */
+form button,
+.central-btn {
+    background-color: #45a049;
+    /* Mesmo verde do botão inicial */
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    /* Ajuste para uniformidade */
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover,
+.central-btn:hover {
+    background-color: #33a02c;
+    /* Tom mais escuro no hover */
+    transform: scale(1.08);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Rótulos dos campos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Campos de entrada */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #45a049;
+    outline: none;
+}

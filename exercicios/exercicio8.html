@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style_ex8.css">
+    <title>Exercício 8 - Agenda</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Agenda</h1>
+
+        <!-- Formulário para adicionar um contato -->
+        <form id="formAgenda">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite o telefone" required>
+
+            <button type="submit">Adicionar Contato</button>
+        </form>
+
+        <!-- Botão de voltar ao home -->
+        <div class="botoesForm" style="margin-top: 20px;">
+            <a href="../index.html">
+                <button type="button">Voltar ao Home</button>
+            </a>
+        </div>
+
+        <!-- Lista de contatos -->
+        <div id="listaContatos" class="lista-contatos">
+            <h2>Contatos Salvos</h2>
+            <ul id="contatos"></ul>
+        </div>
+    </div>
+
+    <script src="exercicio8.js"></script>
+</body>
+
+</html>
